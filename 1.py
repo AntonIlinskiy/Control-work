@@ -12,3 +12,13 @@ test_lst = [
     [19, 20, 21],
     [22, 23, None],
 ]
+
+end_lst = [
+    [
+        item2 if item2 is not None else 0
+        for item2 in item
+    ]
+    for item in test_lst
+
+]
+print(end_lst)
